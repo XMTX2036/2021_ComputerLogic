@@ -1,0 +1,70 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : D_FLIPFLOP.vf
+// /___/   /\     Timestamp : 11/11/2021 08:22:00
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog E:/ISE_Program/MyLATCHES/D_FLIPFLOP.vf -w E:/ISE_Program/MyLATCHES/D_FLIPFLOP.sch
+//Design Name: D_FLIPFLOP
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module D_FLIPFLOP(C, 
+                  D, 
+                  R, 
+                  S, 
+                  Q, 
+                  Qn);
+
+    input C;
+    input D;
+    input R;
+    input S;
+   output Q;
+   output Qn;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_4;
+   wire XLXN_14;
+   wire Q_DUMMY;
+   wire Qn_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   assign Qn = Qn_DUMMY;
+   NAND3  XLXI_5 (.I0(XLXN_2), 
+                 .I1(XLXN_14), 
+                 .I2(S), 
+                 .O(XLXN_1));
+   NAND3  XLXI_6 (.I0(C), 
+                 .I1(R), 
+                 .I2(XLXN_1), 
+                 .O(XLXN_2));
+   NAND3  XLXI_7 (.I0(XLXN_14), 
+                 .I1(C), 
+                 .I2(XLXN_2), 
+                 .O(XLXN_4));
+   NAND3  XLXI_8 (.I0(R), 
+                 .I1(D), 
+                 .I2(XLXN_4), 
+                 .O(XLXN_14));
+   NAND3  XLXI_9 (.I0(Qn_DUMMY), 
+                 .I1(XLXN_2), 
+                 .I2(S), 
+                 .O(Q_DUMMY));
+   NAND3  XLXI_10 (.I0(R), 
+                  .I1(XLXN_4), 
+                  .I2(Q_DUMMY), 
+                  .O(Qn_DUMMY));
+endmodule
