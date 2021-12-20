@@ -1,0 +1,11 @@
+[Inputs]
+clk
+S_L
+s_in
+=p_in[7:0]=
+[Outputs]
+=Q[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel shift_reg
+

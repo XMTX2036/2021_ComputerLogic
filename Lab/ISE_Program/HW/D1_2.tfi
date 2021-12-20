@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+D1_2 instance_name (
+    .A0(A0), 
+    .D0(D0), 
+    .D1(D1)
+    );
+
+

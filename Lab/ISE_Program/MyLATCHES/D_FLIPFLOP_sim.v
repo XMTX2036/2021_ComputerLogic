@@ -41,7 +41,7 @@ initial begin
 end
 
 always begin
-		C=0;#50;
-		C=1;#50;
+		C=0;#30;
+		C=1;#30;
 end
 endmodule

@@ -1,0 +1,1 @@
+vhdtdtfi -prj MyALUTrans -o E:/ISE_Program/MyALUTrans/Mux4to1b4_sch.tfi -module Mux4to1b4_sch -template E:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work Mux4to1b4_sch.vf 

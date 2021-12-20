@@ -1,0 +1,63 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Nov 11 14:00:06 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "SW<1>" LOCATE = SITE "AB10" LEVEL 1;
+COMP "SW<2>" LOCATE = SITE "AA13" LEVEL 1;
+COMP "SW<3>" LOCATE = SITE "AA12" LEVEL 1;
+COMP "SW<4>" LOCATE = SITE "Y13" LEVEL 1;
+COMP "SW<5>" LOCATE = SITE "Y12" LEVEL 1;
+COMP "SW<6>" LOCATE = SITE "AD11" LEVEL 1;
+COMP "SW<7>" LOCATE = SITE "AD10" LEVEL 1;
+COMP "clk" LOCATE = SITE "AC18" LEVEL 1;
+COMP "SW<8>" LOCATE = SITE "AE10" LEVEL 1;
+COMP "SW<9>" LOCATE = SITE "AE12" LEVEL 1;
+COMP "ledsout" LOCATE = SITE "M26" LEVEL 1;
+COMP "ledclk" LOCATE = SITE "N26" LEVEL 1;
+COMP "SW<10>" LOCATE = SITE "AF12" LEVEL 1;
+COMP "LEDEN" LOCATE = SITE "P18" LEVEL 1;
+COMP "LED<0>" LOCATE = SITE "W23" LEVEL 1;
+COMP "BTN<0>" LOCATE = SITE "V18" LEVEL 1;
+PIN BTN<0>_pin<0> = BEL "BTN<0>" PINNAME PAD;
+PIN "BTN<0>_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "BTN<1>" LOCATE = SITE "V19" LEVEL 1;
+PIN BTN<1>_pin<0> = BEL "BTN<1>" PINNAME PAD;
+PIN "BTN<1>_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "SW<11>" LOCATE = SITE "AE8" LEVEL 1;
+COMP "LED<1>" LOCATE = SITE "AB26" LEVEL 1;
+COMP "BTN<2>" LOCATE = SITE "V14" LEVEL 1;
+PIN BTN<2>_pin<0> = BEL "BTN<2>" PINNAME PAD;
+PIN "BTN<2>_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "SW<12>" LOCATE = SITE "AF8" LEVEL 1;
+COMP "LED<2>" LOCATE = SITE "Y25" LEVEL 1;
+COMP "BTN<3>" LOCATE = SITE "W14" LEVEL 1;
+PIN BTN<3>_pin<0> = BEL "BTN<3>" PINNAME PAD;
+PIN "BTN<3>_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "SW<13>" LOCATE = SITE "AE13" LEVEL 1;
+COMP "LED<3>" LOCATE = SITE "AA23" LEVEL 1;
+COMP "SW<14>" LOCATE = SITE "AF13" LEVEL 1;
+COMP "LED<4>" LOCATE = SITE "Y23" LEVEL 1;
+COMP "LED<5>" LOCATE = SITE "Y22" LEVEL 1;
+COMP "SW<15>" LOCATE = SITE "AF10" LEVEL 1;
+COMP "BTNX3" LOCATE = SITE "W15" LEVEL 1;
+COMP "LED<6>" LOCATE = SITE "AE21" LEVEL 1;
+COMP "LED<7>" LOCATE = SITE "AF24" LEVEL 1;
+COMP "ledclrn" LOCATE = SITE "N24" LEVEL 1;
+COMP "SW<0>" LOCATE = SITE "AA10" LEVEL 1;
+TIMEGRP TM_CLK = BEL "m0/clkdiv_0" BEL "m0/clkdiv_1" BEL "m0/clkdiv_2" BEL
+        "m0/clkdiv_3" BEL "m0/clkdiv_4" BEL "m0/clkdiv_5" BEL "m0/clkdiv_6"
+        BEL "m0/clkdiv_7" BEL "m0/clkdiv_8" BEL "m0/clkdiv_9" BEL
+        "m0/clkdiv_10" BEL "m0/clkdiv_11" BEL "m0/clkdiv_12" BEL
+        "m0/clkdiv_13" BEL "m0/clkdiv_14" BEL "m0/clkdiv_15" BEL
+        "m0/clkdiv_16" BEL "m0/clkdiv_17" BEL "m0/clkdiv_18" BEL
+        "m0/clkdiv_19" BEL "m0/clkdiv_20" BEL "m0/clkdiv_21" BEL
+        "m0/clkdiv_22" BEL "m0/clkdiv_23" BEL "m0/clkdiv_24" BEL
+        "m0/clkdiv_25" BEL "m0/clkdiv_26" BEL "clk_BUFGP/BUFG" BEL "U7/Go_0"
+        BEL "U7/Go_1" BEL "U7/Q_15" BEL "U7/Q_0" BEL "U7/Q_1" BEL "U7/Q_2" BEL
+        "U7/Q_3" BEL "U7/Q_4" BEL "U7/Q_5" BEL "U7/Q_6" BEL "U7/Q_7" BEL
+        "U7/Q_8" BEL "U7/Q_9" BEL "U7/Q_10" BEL "U7/Q_11" BEL "U7/Q_12" BEL
+        "U7/Q_13" BEL "U7/Q_14" BEL "U7/Q_16" BEL "ledclk";
+TS_CLK_100M = PERIOD TIMEGRP "TM_CLK" 10 ns HIGH 50%;
+SCHEMATIC END;
+

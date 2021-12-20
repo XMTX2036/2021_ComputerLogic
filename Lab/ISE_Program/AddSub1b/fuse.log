@@ -1,0 +1,23 @@
+Running: E:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/ISE_Program/AddSub1b/AddSub1b_AddSub1b_sch_tb_isim_beh.exe -prj E:/ISE_Program/AddSub1b/AddSub1b_AddSub1b_sch_tb_beh.prj work.AddSub1b_AddSub1b_sch_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/ISE_Program/AddSub1b/Adder1b_sch.vf" into library work
+Analyzing Verilog file "E:/ISE_Program/AddSub1b/AddSub1b.vf" into library work
+Analyzing Verilog file "E:/ISE_Program/AddSub1b/AddSub1b_sim.v" into library work
+Analyzing Verilog file "E:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module AND2
+Compiling module OR3
+Compiling module XOR2
+Compiling module Adder1b_sch
+Compiling module AddSub1b
+Compiling module AddSub1b_AddSub1b_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 7 Verilog Units
+Built simulation executable E:/ISE_Program/AddSub1b/AddSub1b_AddSub1b_sch_tb_isim_beh.exe
+Fuse Memory Usage: 28264 KB
+Fuse CPU Usage: 359 ms

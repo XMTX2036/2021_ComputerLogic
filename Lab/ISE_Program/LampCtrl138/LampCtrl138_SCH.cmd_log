@@ -1,0 +1,12 @@
+sch2hdl -intstyle ise -family kintex7 -verilog LampCtrl138_SCH_drc.vf -w E:/ISE_Program/LampCtrl138/LampCtrl138_SCH.sch 
+xst -intstyle ise -ifn "E:/ISE_Program/LampCtrl138/LampCtrl138_SCH.xst" -ofn "E:/ISE_Program/LampCtrl138/LampCtrl138_SCH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-1 LampCtrl138_SCH.ngc LampCtrl138_SCH.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o LampCtrl138_SCH_map.ncd LampCtrl138_SCH.ngd LampCtrl138_SCH.pcf 
+par -w -intstyle ise -ol high -mt off LampCtrl138_SCH_map.ncd LampCtrl138_SCH.ncd LampCtrl138_SCH.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml LampCtrl138_SCH.twx LampCtrl138_SCH.ncd -o LampCtrl138_SCH.twr LampCtrl138_SCH.pcf 
+bitgen -intstyle ise -f LampCtrl138_SCH.ut LampCtrl138_SCH.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LampCtrl138.ucf -p xc7k160t-ffg676-1 LampCtrl138_SCH.ngc LampCtrl138_SCH.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o LampCtrl138_SCH_map.ncd LampCtrl138_SCH.ngd LampCtrl138_SCH.pcf 
+par -w -intstyle ise -ol high -mt off LampCtrl138_SCH_map.ncd LampCtrl138_SCH.ncd LampCtrl138_SCH.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml LampCtrl138_SCH.twx LampCtrl138_SCH.ncd -o LampCtrl138_SCH.twr LampCtrl138_SCH.pcf -ucf LampCtrl138.ucf 
+bitgen -intstyle ise -f LampCtrl138_SCH.ut LampCtrl138_SCH.ncd 

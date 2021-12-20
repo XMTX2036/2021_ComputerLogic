@@ -1,0 +1,5 @@
+sch2hdl -intstyle ise -family kintex7 -verilog MS_FLIPFLOP_drc.vf -w E:/ISE_Program/MyLATCHES/MS_FLIPFLOP.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog MS_FLIPFLOP_drc.vf -w E:/ISE_Program/MyLATCHES/MS_FLIPFLOP.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog MS_FLIPFLOP.vf -w E:/ISE_Program/MyLATCHES/MS_FLIPFLOP.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog MS_FLIPFLOP.vf -w E:/ISE_Program/MyLATCHES/MS_FLIPFLOP.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog MS_FLIPFLOP.vf -w E:/ISE_Program/MyLATCHES/MS_FLIPFLOP.sch 

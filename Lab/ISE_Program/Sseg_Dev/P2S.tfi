@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+P2S instance_name (
+    .clk(clk), 
+    .rst(rst), 
+    .Serial(Serial), 
+    .P_Data(P_Data), 
+    .s_clk(s_clk), 
+    .s_clrn(s_clrn), 
+    .sout(sout), 
+    .EN(EN)
+    );
+
+

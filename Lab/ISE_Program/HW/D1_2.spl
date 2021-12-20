@@ -1,0 +1,9 @@
+[Inputs]
+A0
+[Outputs]
+D0
+D1
+[BiDir]
+[ATTRIBUTES]
+VeriModel D1_2
+

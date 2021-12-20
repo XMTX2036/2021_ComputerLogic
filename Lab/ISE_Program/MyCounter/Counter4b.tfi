@@ -1,0 +1,14 @@
+// Verilog instantiation template created from schematic E:\ISE_Program\MyCounter\Counter4b.sch - Thu Nov 11 16:02:09 2021
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   Counter4b UUT (
+		.Rc(    ), 
+		.Qb(    ), 
+		.Qc(    ), 
+		.Qd(    ), 
+		.clk(    ), 
+		.Qa(    )
+   );

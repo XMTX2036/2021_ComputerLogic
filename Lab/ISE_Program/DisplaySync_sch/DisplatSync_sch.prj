@@ -1,0 +1,3 @@
+verilog work "Mux4to1b4_sch.vf"
+verilog work "Mux4to1.vf"
+verilog work "DisplatSync_sch.vf"

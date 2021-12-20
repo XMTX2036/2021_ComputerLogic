@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "E:/ISE_Program/clkdiv/clkdiv.xst" -ofn "E:/ISE_Program/clkdiv/clkdiv.syr" 
+vhdtdtfi -lib work E:/ISE_Program/clkdiv/clkdiv.v -lang verilog -prj clkdiv -o clkdiv.spl -module clkdiv -template E:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clkdiv.spl E:/ISE_Program/clkdiv/clkdiv.sym 
+vhdtdtfi -lang verilog -prj clkdiv -o E:/ISE_Program/clkdiv/clkdiv.tfi -lib work E:/ISE_Program/clkdiv//clkdiv.v -module clkdiv -template E:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

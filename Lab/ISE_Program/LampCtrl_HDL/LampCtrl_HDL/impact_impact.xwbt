@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=E:\ISE_Program\LampCtrl_HDL\LampCtrl_HDL\impact.xsl
+OUTFILE=E:\ISE_Program\LampCtrl_HDL\LampCtrl_HDL\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=E:\ISE_Program\LampCtrl_HDL\LampCtrl_HDL
+LICENSE=iMPACT
+USER_INFO=iMPACT

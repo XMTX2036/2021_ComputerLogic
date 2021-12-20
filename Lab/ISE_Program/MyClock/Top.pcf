@@ -1,0 +1,69 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Dec 18 13:56:08 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "seg_clk" LOCATE = SITE "M24" LEVEL 1;
+COMP "SW" LOCATE = SITE "AA10" LEVEL 1;
+COMP "seg_clrn" LOCATE = SITE "M20" LEVEL 1;
+COMP "AN<0>" LOCATE = SITE "AD21" LEVEL 1;
+COMP "AN<1>" LOCATE = SITE "AC21" LEVEL 1;
+COMP "AN<2>" LOCATE = SITE "AB21" LEVEL 1;
+COMP "AN<3>" LOCATE = SITE "AC22" LEVEL 1;
+COMP "SW1" LOCATE = SITE "AF13" LEVEL 1;
+COMP "SW2" LOCATE = SITE "AF10" LEVEL 1;
+COMP "seg_sout" LOCATE = SITE "L24" LEVEL 1;
+COMP "clk" LOCATE = SITE "AC18" LEVEL 1;
+COMP "SEG_PEN" LOCATE = SITE "R18" LEVEL 1;
+COMP "SEGMENT<5>" LOCATE = SITE "AC24" LEVEL 1;
+COMP "SEGMENT<6>" LOCATE = SITE "AC23" LEVEL 1;
+COMP "SEGMENT<7>" LOCATE = SITE "AA22" LEVEL 1;
+COMP "SEGMENT<1>" LOCATE = SITE "AD24" LEVEL 1;
+COMP "SEGMENT<2>" LOCATE = SITE "AD23" LEVEL 1;
+COMP "SEGMENT<3>" LOCATE = SITE "Y21" LEVEL 1;
+COMP "SEGMENT<4>" LOCATE = SITE "W20" LEVEL 1;
+COMP "SEGMENT<0>" LOCATE = SITE "AB22" LEVEL 1;
+TIMEGRP TM_CLK = BEL "c0/cnt_0" BEL "c0/cnt_1" BEL "c0/cnt_2" BEL "c0/cnt_3"
+        BEL "c0/cnt_4" BEL "c0/cnt_5" BEL "c0/cnt_6" BEL "c0/cnt_7" BEL
+        "c0/cnt_8" BEL "c0/cnt_9" BEL "c0/cnt_10" BEL "c0/cnt_11" BEL
+        "c0/cnt_12" BEL "c0/cnt_13" BEL "c0/cnt_14" BEL "c0/cnt_15" BEL
+        "c0/cnt_16" BEL "c0/cnt_17" BEL "c0/cnt_18" BEL "c0/cnt_19" BEL
+        "c0/cnt_20" BEL "c0/cnt_21" BEL "c0/cnt_22" BEL "c0/cnt_23" BEL
+        "c0/cnt_24" BEL "c0/cnt_25" BEL "c0/cnt_26" BEL "c0/cnt_27" BEL
+        "c0/cnt_28" BEL "c0/cnt_29" BEL "c0/cnt_30" BEL "c0/cnt_31" BEL
+        "c0/clk_100ms" BEL "c1/clkdiv_0" BEL "c1/clkdiv_1" BEL "c1/clkdiv_2"
+        BEL "c1/clkdiv_3" BEL "c1/clkdiv_4" BEL "c1/clkdiv_5" BEL
+        "c1/clkdiv_6" BEL "c1/clkdiv_7" BEL "c1/clkdiv_8" BEL "c1/clkdiv_9"
+        BEL "c1/clkdiv_10" BEL "c1/clkdiv_11" BEL "c1/clkdiv_12" BEL
+        "c1/clkdiv_13" BEL "c1/clkdiv_14" BEL "c1/clkdiv_15" BEL
+        "c1/clkdiv_16" BEL "c1/clkdiv_17" BEL "c1/clkdiv_18" BEL
+        "c1/clkdiv_19" BEL "c1/clkdiv_20" BEL "clk_BUFGP/BUFG" BEL
+        "m7/M2/state_FSM_FFd1" BEL "m7/M2/state_FSM_FFd2" BEL "m7/M2/start_1"
+        BEL "m7/M2/start_0" BEL "m7/M2/s_clk" BEL "m7/M2/EN" BEL
+        "m7/M2/shift_count_4" BEL "m7/M2/shift_count_3" BEL
+        "m7/M2/shift_count_2" BEL "m7/M2/shift_count_1" BEL
+        "m7/M2/shift_count_0" BEL "m7/M2/shift_count_5" BEL "m7/M2/buffer_63"
+        BEL "m7/M2/buffer_62" BEL "m7/M2/buffer_61" BEL "m7/M2/buffer_60" BEL
+        "m7/M2/buffer_59" BEL "m7/M2/buffer_58" BEL "m7/M2/buffer_57" BEL
+        "m7/M2/buffer_56" BEL "m7/M2/buffer_55" BEL "m7/M2/buffer_54" BEL
+        "m7/M2/buffer_53" BEL "m7/M2/buffer_52" BEL "m7/M2/buffer_51" BEL
+        "m7/M2/buffer_50" BEL "m7/M2/buffer_49" BEL "m7/M2/buffer_48" BEL
+        "m7/M2/buffer_47" BEL "m7/M2/buffer_46" BEL "m7/M2/buffer_45" BEL
+        "m7/M2/buffer_44" BEL "m7/M2/buffer_43" BEL "m7/M2/buffer_42" BEL
+        "m7/M2/buffer_41" BEL "m7/M2/buffer_40" BEL "m7/M2/buffer_39" BEL
+        "m7/M2/buffer_38" BEL "m7/M2/buffer_37" BEL "m7/M2/buffer_36" BEL
+        "m7/M2/buffer_35" BEL "m7/M2/buffer_34" BEL "m7/M2/buffer_33" BEL
+        "m7/M2/buffer_32" BEL "m7/M2/buffer_31" BEL "m7/M2/buffer_30" BEL
+        "m7/M2/buffer_29" BEL "m7/M2/buffer_28" BEL "m7/M2/buffer_27" BEL
+        "m7/M2/buffer_26" BEL "m7/M2/buffer_25" BEL "m7/M2/buffer_24" BEL
+        "m7/M2/buffer_23" BEL "m7/M2/buffer_22" BEL "m7/M2/buffer_21" BEL
+        "m7/M2/buffer_20" BEL "m7/M2/buffer_19" BEL "m7/M2/buffer_18" BEL
+        "m7/M2/buffer_17" BEL "m7/M2/buffer_16" BEL "m7/M2/buffer_15" BEL
+        "m7/M2/buffer_14" BEL "m7/M2/buffer_13" BEL "m7/M2/buffer_12" BEL
+        "m7/M2/buffer_11" BEL "m7/M2/buffer_10" BEL "m7/M2/buffer_9" BEL
+        "m7/M2/buffer_8" BEL "m7/M2/buffer_7" BEL "m7/M2/buffer_6" BEL
+        "m7/M2/buffer_5" BEL "m7/M2/buffer_4" BEL "m7/M2/buffer_3" BEL
+        "m7/M2/buffer_2" BEL "m7/M2/buffer_1" BEL "m7/M2/buffer_0";
+TS_CLK_100M = PERIOD TIMEGRP "TM_CLK" 10 ns HIGH 50%;
+SCHEMATIC END;
+

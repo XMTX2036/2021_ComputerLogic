@@ -25,7 +25,7 @@ module MS_FLIPFLOP_MS_FLIPFLOP_sch_tb();
    );
 // Initialize Inputs
 initial begin
-		R=1;S=1;#50;
+		R=0;S=1;#50;
 		R=1;S=0;#50;
 		R=1;S=1;#50;
 		R=0;S=1;#50;

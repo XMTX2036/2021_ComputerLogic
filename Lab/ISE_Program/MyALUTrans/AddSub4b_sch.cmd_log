@@ -1,0 +1,2 @@
+vhdtdtfi -prj MyALUTrans -o E:/ISE_Program/MyALUTrans/AddSub4b_sch.tfi -module AddSub4b_sch -template E:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work Adder1b_sch.vf -lib work AddSub1b.vf -lib work AddSub4b_sch.vf 
+vhdtdtfi -prj MyALUTrans -o E:/ISE_Program/MyALUTrans/AddSub4b_sch.tfi -module AddSub4b_sch -template E:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work Adder1b_sch.vf -lib work AddSub1b.vf -lib work AddSub4b_sch.vf 

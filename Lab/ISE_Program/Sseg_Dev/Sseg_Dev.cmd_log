@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "E:/ISE_Program/Sseg_Dev/Sseg_Dev.xst" -ofn "E:/ISE_Program/Sseg_Dev/Sseg_Dev.syr" 
+xst -intstyle ise -ifn "E:/ISE_Program/Sseg_Dev/Sseg_Dev.xst" -ofn "E:/ISE_Program/Sseg_Dev/Sseg_Dev.syr" 
+xst -intstyle ise -ifn "E:/ISE_Program/Sseg_Dev/Sseg_Dev.xst" -ofn "E:/ISE_Program/Sseg_Dev/Sseg_Dev.syr" 
+sch2sym -intstyle ise -family kintex7 -refsym Sseg_Dev E:/ISE_Program/Sseg_Dev/Sseg_Dev.sch E:/ISE_Program/Sseg_Dev/Sseg_Dev.sym 

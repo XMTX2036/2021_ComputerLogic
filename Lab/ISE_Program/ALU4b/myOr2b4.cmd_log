@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family kintex7 -refsym myOr2b4 E:/ISE_Program/ALU4b/myOr2b4.sch E:/ISE_Program/ALU4b/myOr2b4.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog myOr2b4.vf -w E:/ISE_Program/ALU4b/myOr2b4.sch 

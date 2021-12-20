@@ -1,0 +1,13 @@
+// Verilog instantiation template created from schematic E:\ISE_Program\Adder4b\Adder4b_sch.sch - Fri Nov 05 13:46:35 2021
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   Adder4b_sch UUT (
+		.Co(    ), 
+		.S(    ), 
+		.A(    ), 
+		.B(    ), 
+		.Ci(    )
+   );

@@ -24,7 +24,9 @@ module D_LATCH_D_LATCH_sch_tb();
 // Initialize Inputs
 initial begin
 	C=1;D=1;#50;
-	D=0;#50;
+	D=0;#20;
+	D=1;#20;
+	D=0;#10;
 	C=0;D=1;#50;
 	D=0;	
 end

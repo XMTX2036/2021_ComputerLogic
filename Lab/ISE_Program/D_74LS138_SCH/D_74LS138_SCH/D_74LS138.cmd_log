@@ -1,0 +1,7 @@
+sch2hdl -intstyle ise -family kintex7 -verilog D_74LS138_drc.vf -w E:/ISE_Program/D_74LS138_SCH/D_74LS138_SCH/D_74LS138.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog D_74LS138_drc.vf -w E:/ISE_Program/D_74LS138_SCH/D_74LS138_SCH/D_74LS138.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog D_74LS138_drc.vf -w E:/ISE_Program/D_74LS138_SCH/D_74LS138_SCH/D_74LS138.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog D_74LS138.vf -w E:/ISE_Program/D_74LS138_SCH/D_74LS138_SCH/D_74LS138.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog D_74LS138.vf -w E:/ISE_Program/D_74LS138_SCH/D_74LS138_SCH/D_74LS138.sch 
+xst -intstyle ise -ifn "E:/ISE_Program/D_74LS138_SCH/D_74LS138_SCH/D_74LS138.xst" -ofn "E:/ISE_Program/D_74LS138_SCH/D_74LS138_SCH/D_74LS138.syr" 
+sch2sym -intstyle ise -family kintex7 -refsym D_74LS138 E:/ISE_Program/D_74LS138_SCH/D_74LS138_SCH/D_74LS138.sch E:/ISE_Program/D_74LS138_SCH/D_74LS138_SCH/D_74LS138.sym 

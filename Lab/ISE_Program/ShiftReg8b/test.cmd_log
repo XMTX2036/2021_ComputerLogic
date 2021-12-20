@@ -1,0 +1,5 @@
+sch2hdl -intstyle ise -family kintex7 -verilog test_drc.vf -w D:/NewFolder/ShiftReg8b/test.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog test.vf -w D:/NewFolder/ShiftReg8b/test.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog test.vf -w D:/NewFolder/ShiftReg8b/test.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog test.vf -w D:/NewFolder/ShiftReg8b/test.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog test.vf -w D:/NewFolder/ShiftReg8b/test.sch 

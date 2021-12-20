@@ -1,0 +1,40 @@
+Running: E:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/ISE_Program/ALU4b/ALU4b_ALU4b_sch_tb_isim_beh.exe -prj E:/ISE_Program/ALU4b/ALU4b_ALU4b_sch_tb_beh.prj ALU4b_ALU4b_sch_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/ISE_Program/ALU4b/Adder1b_sch.vf" into library work
+Analyzing Verilog file "E:/ISE_Program/ALU4b/AddSub1b.vf" into library work
+Analyzing Verilog file "E:/ISE_Program/ALU4b/myOr2b4.vf" into library work
+Analyzing Verilog file "E:/ISE_Program/ALU4b/myAnd2b4.vf" into library work
+Analyzing Verilog file "E:/ISE_Program/ALU4b/Mux4to1b4_sch.vf" into library work
+Analyzing Verilog file "E:/ISE_Program/ALU4b/Mux4to1.vf" into library work
+Analyzing Verilog file "E:/ISE_Program/ALU4b/AddSub4b_sch.vf" into library work
+Analyzing Verilog file "E:/ISE_Program/ALU4b/ALU4b.vf" into library work
+Analyzing Verilog file "E:/ISE_Program/ALU4b/ALU_sim.v" into library work
+Analyzing Verilog file "E:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module OR2
+Compiling module myOr2b4_MUSER_ALU4b
+Compiling module AND2
+Compiling module myAnd2b4_MUSER_ALU4b
+Compiling module OR3
+Compiling module XOR2
+Compiling module Adder1b_sch
+Compiling module AddSub1b
+Compiling module AddSub4b_sch
+Compiling module INV
+Compiling module OR4
+Compiling module Mux4to1b4_sch
+Compiling module Mux4to1
+Compiling module GND
+Compiling module ALU4b
+Compiling module ALU4b_ALU4b_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 17 Verilog Units
+Built simulation executable E:/ISE_Program/ALU4b/ALU4b_ALU4b_sch_tb_isim_beh.exe
+Fuse Memory Usage: 28560 KB
+Fuse CPU Usage: 343 ms

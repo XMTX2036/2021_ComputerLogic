@@ -1,0 +1,6 @@
+vhdtdtfi -lib work E:/ISE_Program/Sseg_Dev/P2S_IO.v -lang verilog -prj Sseg_Dev -o P2S.spl -module P2S -template E:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 P2S.spl E:/ISE_Program/Sseg_Dev/P2S.sym 
+vhdtdtfi -lang verilog -prj Sseg_Dev -o E:/ISE_Program/Sseg_Dev/P2S.tfi -lib work E:/ISE_Program/Sseg_Dev//P2S_IO.v -module P2S -template E:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work E:/ISE_Program/Sseg_Dev/P2S_IO.v -lang verilog -prj Sseg_Dev -o P2S.spl -module P2S -template E:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 P2S.spl E:/ISE_Program/Sseg_Dev/P2S.sym 
+vhdtdtfi -lang verilog -prj Sseg_Dev -o E:/ISE_Program/Sseg_Dev/P2S.tfi -lib work E:/ISE_Program/Sseg_Dev//P2S_IO.v -module P2S -template E:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

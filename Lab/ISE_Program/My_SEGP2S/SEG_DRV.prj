@@ -1,0 +1,3 @@
+verilog work "MyMC14495.vf"
+verilog work "HexTo8SEG.v"
+verilog work "SEG_DRV.v"

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/ISE_Program/Adder1b/Adder1b_sch_Adder1b_sch_sch_tb_isim_beh.exe" -prj "E:/ISE_Program/Adder1b/Adder1b_sch_Adder1b_sch_sch_tb_beh.prj" "work.Adder1b_sch_Adder1b_sch_sch_tb" "work.glbl" 

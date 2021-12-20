@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/ISE_Program/HW/C6_13_0.v -lang verilog -prj HW -o C6_13_0.spl -module C6_13_0 -template E:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 C6_13_0.spl E:/ISE_Program/HW/C6_13_0.sym 

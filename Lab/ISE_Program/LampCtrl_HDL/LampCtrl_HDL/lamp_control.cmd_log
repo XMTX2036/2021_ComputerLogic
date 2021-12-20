@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "E:/ISE_Program/LampCtrl_HDL/LampCtrl_HDL/lamp_control.xst" -ofn "E:/ISE_Program/LampCtrl_HDL/LampCtrl_HDL/lamp_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-1 lamp_control.ngc lamp_control.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o lamp_control_map.ncd lamp_control.ngd lamp_control.pcf 
+par -w -intstyle ise -ol high -mt off lamp_control_map.ncd lamp_control.ncd lamp_control.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lamp_control.twx lamp_control.ncd -o lamp_control.twr lamp_control.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-1 lamp_control.ngc lamp_control.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o lamp_control_map.ncd lamp_control.ngd lamp_control.pcf 
+par -w -intstyle ise -ol high -mt off lamp_control_map.ncd lamp_control.ncd lamp_control.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lamp_control.twx lamp_control.ncd -o lamp_control.twr lamp_control.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 lamp_control.ngc lamp_control.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o lamp_control_map.ncd lamp_control.ngd lamp_control.pcf 
+par -w -intstyle ise -ol high -mt off lamp_control_map.ncd lamp_control.ncd lamp_control.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lamp_control.twx lamp_control.ncd -o lamp_control.twr lamp_control.pcf -ucf K7.ucf 
+bitgen -intstyle ise -f lamp_control.ut lamp_control.ncd 
+xst -intstyle ise -ifn "E:/ISE_Program/LampCtrl_HDL/LampCtrl_HDL/lamp_control.xst" -ofn "E:/ISE_Program/LampCtrl_HDL/LampCtrl_HDL/lamp_control.syr" 
+xst -intstyle ise -ifn "E:/ISE_Program/LampCtrl_HDL/LampCtrl_HDL/lamp_control.xst" -ofn "E:/ISE_Program/LampCtrl_HDL/LampCtrl_HDL/lamp_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 lamp_control.ngc lamp_control.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o lamp_control_map.ncd lamp_control.ngd lamp_control.pcf 
+par -w -intstyle ise -ol high -mt off lamp_control_map.ncd lamp_control.ncd lamp_control.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lamp_control.twx lamp_control.ncd -o lamp_control.twr lamp_control.pcf -ucf K7.ucf 
+bitgen -intstyle ise -f lamp_control.ut lamp_control.ncd 

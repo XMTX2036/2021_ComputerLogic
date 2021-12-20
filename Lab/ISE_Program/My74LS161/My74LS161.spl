@@ -1,0 +1,14 @@
+[Inputs]
+_CR
+_LD
+CTt
+CTp
+CP
+=D[3:0]=
+[Outputs]
+Co
+=Q[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel My74LS161
+

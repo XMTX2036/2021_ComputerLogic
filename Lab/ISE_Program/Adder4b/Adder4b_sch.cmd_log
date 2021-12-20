@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "E:/ISE_Program/Adder4b/Adder4b_sch.xst" -ofn "E:/ISE_Program/Adder4b/Adder4b_sch.syr" 
+sch2sym -intstyle ise -family kintex7 -refsym Adder4b_sch E:/ISE_Program/Adder4b/Adder4b_sch.sch E:/ISE_Program/Adder4b/Adder4b_sch.sym 
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w E:/ISE_Program/Adder4b/Adder4b_sch.sch Adder4b_sch.tfi 

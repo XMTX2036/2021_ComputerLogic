@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family kintex7 -verilog Counter4b_drc.vf -w E:/ISE_Program/MyCounter/Counter4b.sch 
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w E:/ISE_Program/MyCounter/Counter4b.sch Counter4b.tfi 

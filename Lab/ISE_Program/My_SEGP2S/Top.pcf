@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Dec 18 13:47:36 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "AC18" LEVEL 1;
+COMP "sclk" LOCATE = SITE "M24" LEVEL 1;
+COMP "SEG_PEN" LOCATE = SITE "R18" LEVEL 1;
+COMP "sclrn" LOCATE = SITE "M20" LEVEL 1;
+COMP "sout" LOCATE = SITE "L24" LEVEL 1;
+SCHEMATIC END;
+

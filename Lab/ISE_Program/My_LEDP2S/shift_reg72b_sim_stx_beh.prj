@@ -1,0 +1,4 @@
+verilog isim_temp "shift_reg.v"
+verilog isim_temp "shift_reg72b.v"
+verilog isim_temp "shift_reg72b_sim.v"
+verilog isim_temp "C:/XilinxISE/14.7/ISE_DS/ISE//verilog/src/glbl.v"

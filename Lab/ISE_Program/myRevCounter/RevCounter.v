@@ -24,7 +24,7 @@ module RevCounter( input wire clk,
 						 output wire Rc
     );
 	 
-	 assign Rc = (~s & (~|cnt)) | (s & (&cnt));
+	 assign Rc = ~((~s & (~|cnt)) | (s & (&cnt)));
 	 
 	 always @(posedge clk) begin 
 		if(s) 

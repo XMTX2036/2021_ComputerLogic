@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\ISE_Program\ALU_Application\Top.ncd
+OUTFILE=E:\ISE_Program\ALU_Application\Top.bit
+FAMILY=Kintex7
+PART=xc7k160t-1ffg676
+WORKINGDIR=E:\ISE_Program\ALU_Application
+LICENSE=WebPack
+USER_INFO=__0_0_0

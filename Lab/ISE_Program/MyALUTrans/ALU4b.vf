@@ -1,0 +1,113 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ALU4b.vf
+// /___/   /\     Timestamp : 11/05/2021 15:12:32
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog E:/ISE_Program/ALU4b/ALU4b.vf -w E:/ISE_Program/ALU4b/ALU4b.sch
+//Design Name: ALU4b
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module myAnd2b4_MUSER_ALU4b(A, 
+                            B, 
+                            C);
+
+    input [3:0] A;
+    input [3:0] B;
+   output [3:0] C;
+   
+   
+   AND2  XLXI_1 (.I0(B[0]), 
+                .I1(A[0]), 
+                .O(C[0]));
+   AND2  XLXI_2 (.I0(B[1]), 
+                .I1(A[1]), 
+                .O(C[1]));
+   AND2  XLXI_3 (.I0(B[2]), 
+                .I1(A[2]), 
+                .O(C[2]));
+   AND2  XLXI_4 (.I0(B[3]), 
+                .I1(A[3]), 
+                .O(C[3]));
+endmodule
+`timescale 1ns / 1ps
+
+module myOr2b4_MUSER_ALU4b(A, 
+                           B, 
+                           C);
+
+    input [3:0] A;
+    input [3:0] B;
+   output [3:0] C;
+   
+   
+   OR2  XLXI_5 (.I0(B[0]), 
+               .I1(A[0]), 
+               .O(C[0]));
+   OR2  XLXI_6 (.I0(B[1]), 
+               .I1(A[1]), 
+               .O(C[1]));
+   OR2  XLXI_7 (.I0(B[3]), 
+               .I1(A[2]), 
+               .O(C[2]));
+   OR2  XLXI_8 (.I0(B[3]), 
+               .I1(A[3]), 
+               .O(C[3]));
+endmodule
+`timescale 1ns / 1ps
+
+module ALU4b(A, 
+             B, 
+             S, 
+             C, 
+             Co);
+
+    input [3:0] A;
+    input [3:0] B;
+    input [1:0] S;
+   output [3:0] C;
+   output Co;
+   
+   wire V1;
+   wire [3:0] XLXN_5;
+   wire [3:0] XLXN_7;
+   wire [3:0] XLXN_8;
+   wire XLXN_15;
+   
+   myOr2b4_MUSER_ALU4b  XLXI_1 (.A(A[3:0]), 
+                               .B(B[3:0]), 
+                               .C(XLXN_8[3:0]));
+   myAnd2b4_MUSER_ALU4b  XLXI_2 (.A(A[3:0]), 
+                                .B(B[3:0]), 
+                                .C(XLXN_7[3:0]));
+   AddSub4b_sch  XLXI_3 (.A(A[3:0]), 
+                        .B(B[3:0]), 
+                        .Ctrl(S[0]), 
+                        .Co(XLXN_15), 
+                        .S(XLXN_5[3:0]));
+   Mux4to1b4_sch  XLXI_4 (.l0(XLXN_5[3:0]), 
+                         .l1(XLXN_5[3:0]), 
+                         .l2(XLXN_7[3:0]), 
+                         .l3(XLXN_8[3:0]), 
+                         .s(S[1:0]), 
+                         .o(C[3:0]));
+   Mux4to1  XLXI_5 (.l0(XLXN_15), 
+                   .l1(XLXN_15), 
+                   .l2(V1), 
+                   .l3(V1), 
+                   .s(S[1:0]), 
+                   .o(Co));
+   GND  XLXI_6 (.G(V1));
+endmodule

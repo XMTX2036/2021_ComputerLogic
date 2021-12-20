@@ -1,0 +1,89 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : C3_13.vf
+// /___/   /\     Timestamp : 12/19/2021 21:31:07
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog E:/ISE_Program/HW/C3_13.vf -w E:/ISE_Program/HW/C3_13.sch
+//Design Name: C3_13
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module C3_13(A, 
+             B, 
+             C, 
+             D, 
+             E, 
+             W, 
+             X, 
+             Y, 
+             F, 
+             G, 
+             O);
+
+    input A;
+    input B;
+    input C;
+    input D;
+    input E;
+    input W;
+    input X;
+    input Y;
+   output F;
+   output G;
+   output O;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_39;
+   wire XLXN_40;
+   wire XLXN_46;
+   wire F_DUMMY;
+   wire G_DUMMY;
+   
+   assign F = F_DUMMY;
+   assign G = G_DUMMY;
+   AND2  XLXI_1 (.I0(X), 
+                .I1(XLXN_3), 
+                .O(XLXN_1));
+   AND2  XLXI_2 (.I0(Y), 
+                .I1(W), 
+                .O(XLXN_2));
+   OR2  XLXI_3 (.I0(XLXN_2), 
+               .I1(XLXN_1), 
+               .O(O));
+   INV  XLXI_4 (.I(W), 
+               .O(XLXN_3));
+   C3_13  XLXI_5 (.W(E), 
+                 .X(C), 
+                 .Y(D), 
+                 .O(XLXN_39));
+   AND2  XLXI_6 (.I0(XLXN_39), 
+                .I1(A), 
+                .O(F_DUMMY));
+   INV  XLXI_7 (.I(A), 
+               .O(XLXN_40));
+   INV  XLXI_8 (.I(B), 
+               .O(XLXN_46));
+   AND2  XLXI_13 (.I0(D), 
+                 .I1(XLXN_40), 
+                 .O(F_DUMMY));
+   AND2  XLXI_14 (.I0(B), 
+                 .I1(XLXN_39), 
+                 .O(G_DUMMY));
+   AND2  XLXI_15 (.I0(XLXN_46), 
+                 .I1(C), 
+                 .O(G_DUMMY));
+endmodule

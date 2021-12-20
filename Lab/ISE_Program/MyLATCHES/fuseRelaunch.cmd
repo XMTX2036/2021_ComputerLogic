@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/ISE_Program/MyLATCHES/D_FLIPFLOP_D_FLIPFLOP_sch_tb_isim_beh.exe" -prj "E:/ISE_Program/MyLATCHES/D_FLIPFLOP_D_FLIPFLOP_sch_tb_beh.prj" "work.D_FLIPFLOP_D_FLIPFLOP_sch_tb" "work.glbl" 

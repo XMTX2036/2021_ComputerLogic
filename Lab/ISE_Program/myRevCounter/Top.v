@@ -20,6 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module Top(input wire clk,
 			  input wire [7:0] SW,
+			  input wire SW_UD,
 			  output wire [3:0] AN,
 			  output wire [7:0] SEGMENT,
 			  output wire [7:0] LED,
@@ -42,12 +43,12 @@ module Top(input wire clk,
 		
 		clkdiv m3(.clk(clk), .rst(1'b0), .clkdiv(div[31:0]));
 		LEDP2S #(.DATA_BITS(16), .DATA_COUNT_BITS(4), .DIR(0))
-				U7(.clk(clk), .rst(1'b0), .Start(div[20]), .PData({8'hFF, LED}), .sclk(ledclk), .sclrn(ledclrn), .sout(ledsout),
+				U7(.clk(clk), .rst(1'b0), .Start(div[20]), .PData({8'hFF, LED[7:1], NLED0}), .sclk(ledclk), .sclrn(ledclrn), .sout(ledsout),
 				.EN(LEDEN));
-		SSeg7_Dev m4(.clk(clk), .rst(1'b0), .Start(div[20]), .SW0(SW[0]), .flash(1'b0), .Hexs({16'hFF_FF, cnt}), .point({8'b0000_1111}),
+		SSeg7_Dev m4(.clk(clk), .rst(1'b0), .Start(div[20]), .SW0(SW[0]), .flash(1'b0), .Hexs({16'h5455, cnt}), .point({8'b0000_1111}),
 						 .LES(8'b1111_0000), .seg_clk(seg_clk), .seg_sout(seg_sout), .SEG_PEN(SEG_PEN), .seg_clrn(seg_clrn));
 
-		RevCounter m0 (.clk(clk_100ms), .s(SW[0]), .cnt(cnt), .Rc(NLED0));
+		RevCounter m0 (.clk(clk_100ms), .s(SW_UD), .cnt(cnt), .Rc(NLED0));
 		clk_100ms m1 (.clk(clk), .clk_100ms(clk_100ms));
-		disp_num(.clk(clk), .HEXS(cnt), .LES(4'b0000), .points(4'b1111), .RST(1'b0), .AN(AN), .Segment(SEGMENT));
+		disp_num m2jkl6kj(.clk(clk), .HEXS(cnt), .LES(4'b0000), .points(4'b1111), .RST(1'b0), .AN(AN), .Segment(SEGMENT));
 endmodule

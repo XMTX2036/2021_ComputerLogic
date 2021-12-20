@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family kintex7 -verilog SR_LATCH_drc.vf -w E:/ISE_Program/MyLATCHES/SR_LATCH.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog SR_LATCH_drc.vf -w E:/ISE_Program/MyLATCHES/SR_LATCH.sch 

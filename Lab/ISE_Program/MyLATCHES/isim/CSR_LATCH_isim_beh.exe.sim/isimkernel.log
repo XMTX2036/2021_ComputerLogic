@@ -1,0 +1,28 @@
+Command line:
+   CSR_LATCH_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  5943
+
+Fri Nov 26 19:53:28 2021
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5159.11 Meg
+
+ Total Signals          : 34
+ Total Nets             : 22
+ Total Signal Drivers   : 11
+ Total Blocks           : 6
+ Total Primitive Blocks : 5
+ Total Processes        : 12
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 102
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 5159.11 Meg
+
+Fri Nov 26 19:53:33 2021
+

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/NewFolder/ShiftReg8b/shift_reg.xst" -ofn "D:/NewFolder/ShiftReg8b/shift_reg.syr" 
+xst -intstyle ise -ifn "D:/NewFolder/ShiftReg8b/shift_reg.xst" -ofn "D:/NewFolder/ShiftReg8b/shift_reg.syr" 

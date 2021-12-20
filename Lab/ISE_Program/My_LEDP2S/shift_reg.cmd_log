@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/NewFolder/My_LEDP2S/shift_reg.v -lang verilog -prj My_LEDP2S -o shift_reg.spl -module shift_reg -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 shift_reg.spl D:/NewFolder/My_LEDP2S/shift_reg.sym 

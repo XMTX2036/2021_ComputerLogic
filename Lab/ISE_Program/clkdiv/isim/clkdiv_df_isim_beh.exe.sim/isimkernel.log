@@ -1,0 +1,28 @@
+Command line:
+   clkdiv_df_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  7061
+
+Wed Nov 03 19:26:06 2021
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5158.54 Meg
+
+ Total Signals          : 14
+ Total Nets             : 46
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 8
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 158
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 5158.54 Meg
+
+Wed Nov 03 19:26:35 2021
+

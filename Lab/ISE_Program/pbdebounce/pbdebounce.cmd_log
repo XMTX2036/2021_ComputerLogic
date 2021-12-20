@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/ISE_Program/pbdebounce/pbdebounce.xst" -ofn "E:/ISE_Program/pbdebounce/pbdebounce.syr" 

@@ -1,0 +1,3 @@
+vhdtdtfi -lib work E:/ISE_Program/HW/D1_2.v -lang verilog -prj HW -o D1_2.spl -module D1_2 -template E:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 D1_2.spl E:/ISE_Program/HW/D1_2.sym 
+vhdtdtfi -lang verilog -prj HW -o E:/ISE_Program/HW/D1_2.tfi -lib work E:/ISE_Program/HW//D1_2.v -module D1_2 -template E:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
